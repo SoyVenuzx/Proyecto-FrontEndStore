@@ -1,0 +1,145 @@
+:root {
+  /* Paleta */
+  --white: #fff;
+  --dark: #2a2f3d;
+  --primario: #ffca00;
+  --secundario: #ff6732;
+
+  --bg-color: var(--dark);
+
+  /* Fuentes */
+  --fuente-titulo: "Montserrat", sans-serif;
+  --fuente-alt: "Roboto", sans-serif;
+  --fuente-principal: "Source Sans Pro", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* Hack para font-size 1rem=10px */
+  box-sizing: border-box; /*  Snippet para box sizing */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* Snippet box sizing */
+}
+
+/* Globales */
+body {
+  background-color: var(--bg-color);
+  font-family: var(--fuente-principal);
+  font-size: 16px; /* Hack para font-size 1rem = 10px */
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: var(--fuente-alt);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--secundario);
+  font-family: var(--fuente-titulo);
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  max-width: 20rem;
+  margin: 3rem 0;
+}
+
+/* Navegacoin */
+.navegacion {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secundario);
+  padding: 0.8rem 0;
+}
+
+.navegacion__elemento {
+  color: var(--white);
+  font-family: var(--fuente-alt);
+  font-weight: bold;
+  font-size: 2.1rem;
+  margin: 0 3rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navegacion__elemento:nth-child(1) {
+  border-bottom: 1px solid var(--white);
+}
+
+.navegacion__elemento:hover,
+.navegacion__elemento--activo {
+  color: var(--primario);
+}
+
+@media (max-width: 468px) {
+  .navegacion {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4rem;
+  }
+
+  .navegacion__elemento {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+  }
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: var(--secundario);
+}
+
+.footer__info {
+  font-family: var(--fuente-titulo);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 468px) {
+  .footer__info {
+    font-size: 1.2rem;
+  }
+}
