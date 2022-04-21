@@ -32,6 +32,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   color: var(--white);
+  margin-bottom: 6rem;
 }
 
 p {
@@ -153,7 +154,7 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   padding-top: 2.4rem;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
 }
 
 @media (max-width: 468px) {
@@ -176,6 +177,11 @@ h3 {
 .producto__imagen {
   width: 100%;
   border-radius: 4rem;
+  transition: box-shadow .3s ease-out;
+}
+
+.producto__imagen:hover {
+  box-shadow: 0px 1px 15px 0px rgba(42,47,61,0.60);
 }
 
 .producto__info {
