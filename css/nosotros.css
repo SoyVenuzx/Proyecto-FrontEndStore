@@ -137,6 +137,14 @@
     transition: .3s ease-in-out;
   }
 
+  .bloque__titulo {
+    margin: 0;
+  }
+
+  .bloque__imagen {
+    max-height: 20rem;
+  }
+
   .bloque:hover {
     border: 1px solid var(--secundario);
     background-color: var(--secundario);
