@@ -48,16 +48,35 @@
     </header>
 
     <nav class="navegacion">
-      <a
-        href="index.html"
-        class="navegacion__elemento"
-        >Tienda</a
-      >
+      <a href="index.html" class="navegacion__elemento">Tienda</a>
       <a href="nosotros.html" class="navegacion__elemento">Nosotros</a>
     </nav>
 
     <main class="container">
-      <h1>Productos</h1>
+      <h1>ReactJS</h1>
+      <div class="camisa">
+        <img src="img/3.jpg" alt="Imagen del producto" class="camisa__imagen" />
+        <div class="camisa__contenido">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            pariatur est praesentium sed quas quaerat repellendus temporibus
+            maxime itaque totam, corporis saepe ratione.
+          </p>
+
+          <form class="formulario">
+            <div class="formulario__contenedores">
+              <select>
+                <option disabled selected>-- Seleccionar Talla --</option>
+                <option>Chica</option>
+                <option>Mediana</option>
+                <option>Grande</option>
+              </select>
+              <input type="number" placeholder="Cantidad" min="1" />
+            </div>
+            <input type="submit" value="Agregar al carrito" />
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
